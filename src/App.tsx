@@ -63,7 +63,7 @@ function App() {
                 <img src={Logo} alt="logo" width="60" height="60"/>
             </div>
             <div className="row">
-                <div className="col-12 d-flex justify-content-center align-items-center">
+                <div className="col-12 d-flex justify-content-center align-items-center py-4">
                     <BarraBusqueda onSearchChange={handleSearchChange}/>
                 </div>
             </div>
