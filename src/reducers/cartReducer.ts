@@ -10,14 +10,12 @@ export const cartReducer = (state: CartItem[], action: CartAction): CartItem[] =
       const existente = state.find(item => item.product.id === producto.id);
 
       if (existente) {
-        // Incrementar cantidad
         return state.map(item =>
           item.product.id === producto.id
             ? { ...item, cantidad: item.cantidad + 1 }
             : item
         );
       } else {
-        // Agregar nuevo producto con cantidad: 1
         return [...state, { product: producto, cantidad: 1 }];
       }
     }
