@@ -5,7 +5,7 @@ import {Box, Button, ButtonGroup, IconButton, Modal} from '@mui/material'
 import {styled} from '@mui/material/styles';
 import Badge, {badgeClasses} from '@mui/material/Badge';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCartOutlined';
-import '../styles/ShoppingCart.css'
+import '../styles/CarritoCompras.css'
 
 interface Props {
     items: CartItem[]
@@ -42,7 +42,7 @@ const CarritoCompras: React.FC<Props> = ({items, dispatch}) => {
         <>
             <div className={`icon-style`}>
                 <IconButton onClick={() => setOpenModal(true)}>
-                    <ShoppingCartIcon fontSize="small"/>
+                    <ShoppingCartIcon/>
                     <CartBadge badgeContent={items.length} color="primary" overlap="circular"/>
                 </IconButton>
             </div>

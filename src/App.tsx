@@ -9,10 +9,13 @@ import './App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import CamisaBlanca from './assets/camisaBlanca.png'
-import PantalonNegro from './assets/pantalonNegro.webp'
-import ZapatosMarrones from './assets/zapatosMarrones.jpg'
-import JacketAzul from './assets/jacketAzul.webp'
+import Logo from './assets/img/logo.svg'
+import CamisaNegra from './assets/img/black-shirt.webp'
+import PantalonNegro from './assets/img/pantalonNegro.webp'
+import BotasCaqui from './assets/img/caqui-boots.png'
+import JacketNegra from './assets/img/leather-jacket.webp'
+import GorroOliva from './assets/img/beanie-oliva.webp'
+import CamisaRosada from './assets/img/pink-shirt.webp'
 
 AOS.init({})
 
@@ -26,12 +29,12 @@ const initialCart = (): CartItem[] => {
 };
 
 const mockProductos: Product[] = [
-    {id: '1', nombre: 'Camisa Blanca', precio: 25, descripcion: 'Camisa de algodón blanca', imagen: CamisaBlanca},
-    {id: '2', nombre: 'Pantalón Negro', precio: 40, descripcion: 'Pantalón elegante negro', imagen: PantalonNegro},
-    {id: '3', nombre: 'Zapatos Marrones', precio: 60, descripcion: 'Zapatos de cuero marrón', imagen: ZapatosMarrones},
-    {id: '4', nombre: 'Jacket Azul', precio: 80, descripcion: 'Jacket tipo denim azul', imagen: JacketAzul},
-    {id: '3', nombre: 'Zapatos Marrones', precio: 60, descripcion: 'Zapatos de cuero marrón', imagen: ZapatosMarrones},
-    {id: '4', nombre: 'Jacket Azul', precio: 80, descripcion: 'Jacket tipo denim azul', imagen: JacketAzul}
+    {id: '1', nombre: 'Camisa Negra', precio: 25, descripcion: 'Camisa de algodón negra', imagen: CamisaNegra},
+    {id: '2', nombre: 'Pantalón Negro', precio: 40, descripcion: 'Pantalón de vestir negro', imagen: PantalonNegro},
+    {id: '3', nombre: 'Botas Caqui', precio: 60, descripcion: 'Botas de cuero caqui', imagen: BotasCaqui},
+    {id: '4', nombre: 'Jacket Negra', precio: 80, descripcion: 'Jacket de cuero negra', imagen: JacketNegra},
+    {id: '5', nombre: 'Gorro Oliva', precio: 15, descripcion: 'Gorro de lana oliva', imagen: GorroOliva},
+    {id: '6', nombre: 'Camisa Rosada', precio: 20, descripcion: 'Camisa de algodón rosada', imagen: CamisaRosada}
 ];
 
 function App() {
@@ -56,8 +59,11 @@ function App() {
 
     return (
         <div className="container-fluid h-100 bg-style">
+            <div className={`row d-flex justify-content-center align-items-center py-4`}>
+                <img src={Logo} alt="logo" width="60" height="60"/>
+            </div>
             <div className="row">
-                <div className="col-12">
+                <div className="col-12 d-flex justify-content-center align-items-center">
                     <BarraBusqueda onSearchChange={handleSearchChange}/>
                 </div>
             </div>

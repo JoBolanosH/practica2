@@ -17,6 +17,8 @@ Esto ejecutará el proyecto en desarrollo. Por defecto, se abrirá en `http://lo
 
 ```
 src/
+├── assets/
+│   ├── img/
 ├── components/
 │   ├── BarraBusqueda.tsx
 │   ├── CarritoCompras.tsx
@@ -24,7 +26,9 @@ src/
 │   └── TarjetaProducto.tsx
 ├── reducers/
 │   └── cartReducer.ts
-├── models/
+├── styles/
+│   └── CarritoCompras.css
+├── types/
 │   └── types.ts
 ├── App.tsx
 └── main.tsx
