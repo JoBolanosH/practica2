@@ -1,0 +1,15 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.bg-style{
+  background-image: url("src/assets/bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
